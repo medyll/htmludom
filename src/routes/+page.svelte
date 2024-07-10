@@ -20,7 +20,9 @@
 	}
 
 	onMount(() => {
-		cssDom('[data-cssDom]').each((element) => {
+		cssDom('[data-cssDom]',{
+			trackChildList: true,
+		}).each((element) => {
 			console.log(element);
 		});
 
